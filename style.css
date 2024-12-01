@@ -1,0 +1,125 @@
+:root {
+  /* color */
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --text-primary: #8484a7;
+  --border-primary: #e7e7ff;
+  --border-secondary: #ececf8;
+  --primary-color: #523fff;
+  --background-color: #e3e3e3;
+  --separator-color: #ededf9;
+  --button-hover: #846af8;
+
+  /* tipografi */
+  --font-family: "Inter";
+  --heading-font-size: 24px;
+  --body-font-size: 14px;
+  --skill-font-size: 12px;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.card-body {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  width: 735px;
+}
+
+.header {
+  padding-top: 32px;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+
+.title {
+  font-family: var(--font-family);
+  font-size: var(--heading-font-size);
+}
+
+.sub-title {
+  font-family: var(--font-family);
+  font-size: var(--body-font-size);
+  font-weight: normal;
+  margin-top: -5px;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background-color: var(--separator-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding-bottom: 32px;
+  padding-right: 37px;
+  padding-left: 37px;
+}
+
+.input-wrapper {
+  width: 100%;
+  margin-bottom: 32px;
+  margin-top: 29px;
+}
+
+.input-text {
+  padding: 20px 15px;
+  border-radius: 6px;
+  border: solid 1px var(--border-primary);
+  width: 559px;
+  margin-right: 13px;
+}
+
+.btn-add {
+  background-color: var(--primary-color);
+  padding: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  background-color: var(--button-hover);
+}
+
+.card-skills {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 138px;
+  height: 32px;
+  border: solid 1px var(--border-secondary);
+  padding: 8px 16px;
+  border-radius: 29px;
+  gap: 0px;
+}
+
+.skill-text {
+  font-size: var(--skill-font-size);
+  color: var(--black-color);
+  font-family: var(--font-family);
+  line-height: 1;
+}
+
+.btn-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-icon {
+  width: 18px;
+  height: 18px;
+}
